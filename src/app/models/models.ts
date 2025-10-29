@@ -1,10 +1,21 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-models',
+  imports: [],
+  templateUrl: './models.html',
+  styleUrl: './models.scss',
+})
+export class Models {
+
+}
+
 export interface Restaurant {
   id: number;
   name: string;
   slug: string; // Para el opcional de URL amigable
 }
 
-// src/app/models/product.ts
 export interface Product {
   id: number;
   name: string;
@@ -17,7 +28,6 @@ export interface Product {
   restaurantId: number;
 }
 
-// src/app/models/user.ts
 export interface User {
   id: number;
   email: string;
